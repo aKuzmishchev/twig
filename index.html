@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Twig AI — AI Operating System for Restaurants. Turn fragmented operations into autonomous decisions and measurable profit." />
+  <title>Twig AI — AI Operating System for Restaurants</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════
+     NAV
+═══════════════════════════════════════════════════ -->
+<header class="nav" id="nav">
+  <div class="container">
+    <nav class="nav__inner" aria-label="Main navigation">
+
+      <a href="#" class="nav__logo" aria-label="Twig AI — home">
+        <div class="nav__logo-mark" aria-hidden="true">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 15C3 15 6.5 10 9 8C11.5 6 15 3 15 3" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+            <path d="M9 8C9 8 11.5 5.5 13.5 5.5" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span class="nav__logo-text">Twig <span>AI</span></span>
+      </a>
+
+      <div class="nav__right">
+        <div class="lang-switch" role="group" aria-label="Language selector">
+          <button class="lang-btn active" data-lang="en" aria-current="true">EN</button>
+          <button class="lang-btn" data-lang="ru" aria-current="false">RU</button>
+        </div>
+        <a href="#cta" class="btn btn--primary btn--sm" data-i18n="nav.cta">Get a demo</a>
+      </div>
+
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ═══════════════════════════════════════════════════
+     HERO
+═══════════════════════════════════════════════════ -->
+<section class="hero" id="hero">
+  <div class="container">
+    <div class="hero__content">
+
+      <div class="hero__badge anim">
+        <span class="hero__badge-dot" aria-hidden="true"></span>
+        <span data-i18n="hero.badge">AI Operating System for Restaurants</span>
+      </div>
+
+      <h1 class="hero__headline anim" data-delay="1" data-i18n="hero.headline">
+        Turn fragmented ops into<br><em>measurable profit</em>
+      </h1>
+
+      <p class="hero__sub anim" data-delay="2" data-i18n="hero.sub">
+        Twig unifies your restaurant data into an AI layer that doesn't just analyze operations — it runs them.
+      </p>
+
+      <div class="hero__actions anim" data-delay="3">
+        <a href="#cta" class="btn btn--primary btn--lg" data-i18n="hero.cta.primary">Get a demo</a>
+        <a href="#how" class="btn btn--secondary btn--lg" data-i18n="hero.cta.secondary">See how it works</a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="hero__deco" aria-hidden="true">
+    <div class="hero__deco-circle hero__deco-circle--1"></div>
+    <div class="hero__deco-circle hero__deco-circle--2"></div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════
+     PROBLEM
+═══════════════════════════════════════════════════ -->
+<section class="problem" id="problem">
+  <div class="container">
+
+    <div class="section-intro anim">
+      <span class="section-label" data-i18n="problem.label">The Problem</span>
+      <h2 class="section-heading" data-i18n="problem.heading">Restaurants run on razor-thin margins</h2>
+      <p class="section-sub" data-i18n="problem.sub">Fragmented systems, invisible losses, and operational inefficiencies hit directly where it hurts most — your bottom line.</p>
+    </div>
+
+    <div class="problem__grid">
+
+      <article class="stat-card anim" data-delay="1">
+        <div class="stat-card__stat" data-i18n="prob.s1.stat">3–5%</div>
+        <div class="stat-card__label" data-i18n="prob.s1.label">average profit margin</div>
+        <p class="stat-card__desc" data-i18n="prob.s1.desc">The industry average leaves almost no room for costly mistakes or operational waste.</p>
+        <cite class="stat-card__source" data-i18n="prob.s1.source">Toast, 2025</cite>
+      </article>
+
+      <article class="stat-card anim" data-delay="2">
+        <div class="stat-card__stat" data-i18n="prob.s2.stat">$162B</div>
+        <div class="stat-card__label" data-i18n="prob.s2.label">lost to food waste annually</div>
+        <p class="stat-card__desc" data-i18n="prob.s2.desc">US restaurants waste 4–10% of purchased food. Each $1 saved creates $14 in additional revenue.</p>
+        <cite class="stat-card__source" data-i18n="prob.s2.source">EPA / RestaurantHQ, 2025</cite>
+      </article>
+
+      <article class="stat-card anim" data-delay="3">
+        <div class="stat-card__stat" data-i18n="prob.s3.stat">98%</div>
+        <div class="stat-card__label" data-i18n="prob.s3.label">of operators cite labor costs as critical</div>
+        <p class="stat-card__desc" data-i18n="prob.s3.desc">Labor consumes 28–36% of revenue. Fragmented systems make optimization nearly impossible.</p>
+        <cite class="stat-card__source" data-i18n="prob.s3.source">NRA, 2024</cite>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════
+     HOW IT WORKS
+═══════════════════════════════════════════════════ -->
+<section class="how" id="how">
+  <div class="container">
+
+    <div class="section-intro section-intro--center anim">
+      <span class="section-label" data-i18n="how.label">How it works</span>
+      <h2 class="section-heading" data-i18n="how.heading">One AI layer. Unified data.<br>Continuous execution.</h2>
+      <p class="section-sub" data-i18n="how.sub">Twig connects your POS, inventory, staff scheduling, and finance into a single intelligence layer that acts — not just reports.</p>
+    </div>
+
+    <div class="how__steps">
+
+      <div class="how-step anim" data-delay="1">
+        <div class="how-step__icon" aria-hidden="true">
+          <!-- Plug / connect icon -->
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+            <path d="M6 8H5a4 4 0 0 0 0 8h1"/>
+            <line x1="8" y1="12" x2="16" y2="12"/>
+            <path d="M9 4v4M15 4v4M9 16v4M15 16v4"/>
+          </svg>
+        </div>
+        <div class="how-step__num">01</div>
+        <h3 class="how-step__title" data-i18n="how.s1.title">Connect</h3>
+        <p class="how-step__desc" data-i18n="how.s1.desc">Plug in your existing POS, inventory, and finance systems in minutes.</p>
+      </div>
+
+      <div class="how__arrow" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </div>
+
+      <div class="how-step anim" data-delay="2">
+        <div class="how-step__icon" aria-hidden="true">
+          <!-- Sun / radiate icon -->
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"/>
+            <line x1="12" y1="2" x2="12" y2="5"/>
+            <line x1="12" y1="19" x2="12" y2="22"/>
+            <line x1="4.22" y1="4.22" x2="6.34" y2="6.34"/>
+            <line x1="17.66" y1="17.66" x2="19.78" y2="19.78"/>
+            <line x1="2" y1="12" x2="5" y2="12"/>
+            <line x1="19" y1="12" x2="22" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="6.34" y2="17.66"/>
+            <line x1="17.66" y1="6.34" x2="19.78" y2="4.22"/>
+          </svg>
+        </div>
+        <div class="how-step__num">02</div>
+        <h3 class="how-step__title" data-i18n="how.s2.title">Unify &amp; Analyze</h3>
+        <p class="how-step__desc" data-i18n="how.s2.desc">AI processes your data in real time to surface what matters and spot what's going wrong.</p>
+      </div>
+
+      <div class="how__arrow" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
+      </div>
+
+      <div class="how-step anim" data-delay="3">
+        <div class="how-step__icon" aria-hidden="true">
+          <!-- Lightning bolt / act icon -->
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+          </svg>
+        </div>
+        <div class="how-step__num">03</div>
+        <h3 class="how-step__title" data-i18n="how.s3.title">Act &amp; Optimize</h3>
+        <p class="how-step__desc" data-i18n="how.s3.desc">Twig executes decisions autonomously — continuously improving outcomes.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════
+     PILLARS — STICKY HORIZONTAL SCROLL
+═══════════════════════════════════════════════════ -->
+<section class="pillars" id="pillars" aria-label="Product pillars">
+
+  <div class="pillars__sticky">
+
+    <!-- Always-visible strip -->
+    <div class="pillars__header">
+      <span class="section-label section-label--sm" data-i18n="pillars.label">What Twig delivers</span>
+      <span class="pillars__hint" data-i18n="pillars.hint">Scroll to explore →</span>
+    </div>
+
+    <!-- Horizontal sliding track -->
+    <div class="pillars__track" id="pillars-track">
+
+      <!-- ── PILLAR 1: PROFITS ─────────────────────────── -->
+      <div class="pillar-panel" data-pillar="1">
+        <div class="container">
+          <div class="pillar-panel__inner">
+
+            <div class="pillar-panel__content">
+              <div class="pillar-panel__meta">
+                <span class="pillar-panel__number" data-i18n="p1.number">01</span>
+                <span class="pillar-panel__label" data-i18n="p1.label">Profits</span>
+              </div>
+              <h2 class="pillar-panel__heading" data-i18n="p1.heading">Drive revenue growth and margin expansion</h2>
+              <p class="pillar-panel__sub" data-i18n="p1.sub">AI-driven optimization that turns every insight into profit. Continuous, measurable, and compounding.</p>
+              <ul class="pillar-panel__bullets">
+                <li data-i18n="p1.b1">Increase revenue via AI-driven pricing, marketing, and guest targeting</li>
+                <li data-i18n="p1.b2">Improve margins through automated cost control and waste reduction</li>
+                <li data-i18n="p1.b3">Deliver predictable outcomes through continuous optimization</li>
+              </ul>
+              <div class="pillar-panel__areas" data-i18n="p1.areas">Revenue Optimization · Cost &amp; Margin Optimization · Forecasting Intelligence</div>
+            </div>
+
+            <div class="pillar-panel__visual" aria-hidden="true">
+              <div class="p-deco-num">01</div>
+              <div class="p-card">
+                <div class="p-card__head">
+                  <span data-i18n="pv1.title">Revenue this month</span>
+                  <span class="p-card__badge p-card__badge--green" data-i18n="pv1.trend">↑ 12.4%</span>
+                </div>
+                <div class="p-card__value" data-i18n="pv1.value">$284,500</div>
+                <div class="p-card__bars" aria-label="Revenue trend chart">
+                  <span style="height:35%"></span>
+                  <span style="height:52%"></span>
+                  <span style="height:44%"></span>
+                  <span style="height:68%"></span>
+                  <span style="height:58%"></span>
+                  <span style="height:82%"></span>
+                  <span style="height:100%" class="active"></span>
+                </div>
+              </div>
+              <div class="p-tags">
+                <span class="p-tag" data-i18n="pv1.tag1">Revenue Optimization</span>
+                <span class="p-tag" data-i18n="pv1.tag2">Cost Control</span>
+                <span class="p-tag" data-i18n="pv1.tag3">Forecasting</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ── PILLAR 2: AUTONOMOUS DECISIONS ────────────── -->
+      <div class="pillar-panel" data-pillar="2">
+        <div class="container">
+          <div class="pillar-panel__inner">
+
+            <div class="pillar-panel__content">
+              <div class="pillar-panel__meta">
+                <span class="pillar-panel__number" data-i18n="p2.number">02</span>
+                <span class="pillar-panel__label" data-i18n="p2.label">Autonomous Decisions</span>
+              </div>
+              <h2 class="pillar-panel__heading" data-i18n="p2.heading">From dashboards to execution — automatically</h2>
+              <p class="pillar-panel__sub" data-i18n="p2.sub">Stop reviewing reports. Start getting results. Twig turns insights into actions with one click or fully autonomously.</p>
+              <ul class="pillar-panel__bullets">
+                <li data-i18n="p2.b1">AI recommendations directly tied to execution</li>
+                <li data-i18n="p2.b2">One-click or fully autonomous workflows</li>
+                <li data-i18n="p2.b3">Continuous loop: analyze → decide → act → learn</li>
+              </ul>
+              <div class="pillar-panel__areas" data-i18n="p2.areas">AI Copilot · Execution Engine · Autonomous Agents</div>
+            </div>
+
+            <div class="pillar-panel__visual" aria-hidden="true">
+              <div class="p-deco-num">02</div>
+              <div class="p-card">
+                <div class="p-card__head">
+                  <span data-i18n="pv2.title">AI Recommendation</span>
+                  <span class="p-card__badge p-card__badge--purple" data-i18n="pv2.badge">Auto</span>
+                </div>
+                <div class="p-card__action-text" data-i18n="pv2.action">Adjust dinner menu pricing based on tonight's demand forecast</div>
+                <div class="p-card__status" data-i18n="pv2.status">Executed automatically · 3 min ago</div>
+              </div>
+              <div class="p-tags">
+                <span class="p-tag" data-i18n="pv2.tag1">AI Copilot</span>
+                <span class="p-tag" data-i18n="pv2.tag2">Execution Engine</span>
+                <span class="p-tag" data-i18n="pv2.tag3">Autonomous Agents</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ── PILLAR 3: REAL-TIME VISIBILITY ────────────── -->
+      <div class="pillar-panel" data-pillar="3">
+        <div class="container">
+          <div class="pillar-panel__inner">
+
+            <div class="pillar-panel__content">
+              <div class="pillar-panel__meta">
+                <span class="pillar-panel__number" data-i18n="p3.number">03</span>
+                <span class="pillar-panel__label" data-i18n="p3.label">Real-Time Visibility</span>
+              </div>
+              <h2 class="pillar-panel__heading" data-i18n="p3.heading">See your entire operation in real time</h2>
+              <p class="pillar-panel__sub" data-i18n="p3.sub">Unified live view across POS, staff, inventory, and finance. No delays, no manual reports. AI surfaces what matters.</p>
+              <ul class="pillar-panel__bullets">
+                <li data-i18n="p3.b1">Unified live view across POS, staff, inventory, and finance</li>
+                <li data-i18n="p3.b2">No delays, no manual reporting</li>
+                <li data-i18n="p3.b3">AI surfaces what matters, not just raw data</li>
+              </ul>
+              <div class="pillar-panel__areas" data-i18n="p3.areas">Unified Data Layer · Real-Time Analytics</div>
+            </div>
+
+            <div class="pillar-panel__visual" aria-hidden="true">
+              <div class="p-deco-num">03</div>
+              <div class="p-card">
+                <div class="p-card__head">
+                  <span data-i18n="pv3.title">Live Operations</span>
+                  <span class="p-card__live">
+                    <span class="p-card__live-dot"></span>Live
+                  </span>
+                </div>
+                <div class="p-card__metrics">
+                  <div class="p-metric">
+                    <span class="p-metric__label" data-i18n="pv3.m1.label">Sales today</span>
+                    <span class="p-metric__val" data-i18n="pv3.m1.value">$4,820</span>
+                  </div>
+                  <div class="p-metric">
+                    <span class="p-metric__label" data-i18n="pv3.m2.label">Open orders</span>
+                    <span class="p-metric__val" data-i18n="pv3.m2.value">47</span>
+                  </div>
+                  <div class="p-metric">
+                    <span class="p-metric__label" data-i18n="pv3.m3.label">Staff on shift</span>
+                    <span class="p-metric__val" data-i18n="pv3.m3.value">12</span>
+                  </div>
+                </div>
+              </div>
+              <div class="p-tags">
+                <span class="p-tag" data-i18n="pv3.tag1">Unified Data</span>
+                <span class="p-tag" data-i18n="pv3.tag2">Real-Time Analytics</span>
+                <span class="p-tag" data-i18n="pv3.tag3">Live View</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- ── PILLAR 4: FINANCIAL CONTROL ───────────────── -->
+      <div class="pillar-panel" data-pillar="4">
+        <div class="container">
+          <div class="pillar-panel__inner">
+
+            <div class="pillar-panel__content">
+              <div class="pillar-panel__meta">
+                <span class="pillar-panel__number" data-i18n="p4.number">04</span>
+                <span class="pillar-panel__label" data-i18n="p4.label">Financial Control</span>
+              </div>
+              <h2 class="pillar-panel__heading" data-i18n="p4.heading">Eliminate costly mistakes with AI-driven control</h2>
+              <p class="pillar-panel__sub" data-i18n="p4.sub">Detect anomalies, prevent revenue leakage, and ensure data integrity across every location — in real time.</p>
+              <ul class="pillar-panel__bullets">
+                <li data-i18n="p4.b1">Detect anomalies (fraud, write-offs, inconsistencies) in real time</li>
+                <li data-i18n="p4.b2">Ensure accurate inventory and cost tracking</li>
+                <li data-i18n="p4.b3">Prevent revenue leakage and hidden losses</li>
+              </ul>
+              <div class="pillar-panel__areas" data-i18n="p4.areas">Anomaly Detection &amp; Risk Monitoring · Financial Integrity &amp; Control</div>
+            </div>
+
+            <div class="pillar-panel__visual" aria-hidden="true">
+              <div class="p-deco-num">04</div>
+              <div class="p-card p-card--alert">
+                <div class="p-card__head">
+                  <span class="p-card__alert-title">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/>
+                      <line x1="12" y1="9" x2="12" y2="13"/>
+                      <line x1="12" y1="17" x2="12.01" y2="17"/>
+                    </svg>
+                    <span data-i18n="pv4.title">Anomaly Detected</span>
+                  </span>
+                  <span class="p-card__badge p-card__badge--red" data-i18n="pv4.risk">Risk: High</span>
+                </div>
+                <div class="p-card__alert-desc" data-i18n="pv4.desc">Void rate at Bar Station 3 exceeded threshold by 340%</div>
+                <div class="p-card__status p-card__status--action" data-i18n="pv4.action">Flagged for review</div>
+              </div>
+              <div class="p-tags">
+                <span class="p-tag" data-i18n="pv4.tag1">Anomaly Detection</span>
+                <span class="p-tag" data-i18n="pv4.tag2">Risk Monitoring</span>
+                <span class="p-tag" data-i18n="pv4.tag3">Financial Control</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.pillars__track -->
+
+    <!-- Dot navigation + counter -->
+    <div class="pillars__nav">
+      <div class="pillars__dots" role="tablist" aria-label="Navigate pillars">
+        <button class="pillars__dot active" role="tab" aria-selected="true"  aria-label="Pillar 1: Profits"             data-index="0"></button>
+        <button class="pillars__dot"        role="tab" aria-selected="false" aria-label="Pillar 2: Autonomous Decisions" data-index="1"></button>
+        <button class="pillars__dot"        role="tab" aria-selected="false" aria-label="Pillar 3: Real-Time Visibility" data-index="2"></button>
+        <button class="pillars__dot"        role="tab" aria-selected="false" aria-label="Pillar 4: Financial Control"    data-index="3"></button>
+      </div>
+      <span class="pillars__counter" id="pillar-counter" aria-live="polite" aria-atomic="true">01 / 04</span>
+    </div>
+
+    <!-- Scroll progress indicator -->
+    <div class="pillars__progress-bar" id="pillars-progress" role="progressbar" aria-hidden="true"></div>
+
+  </div><!-- /.pillars__sticky -->
+</section>
+
+<!-- ═══════════════════════════════════════════════════
+     STATS
+═══════════════════════════════════════════════════ -->
+<section class="stats" id="stats">
+  <div class="container">
+
+    <div class="section-intro section-intro--center anim">
+      <span class="section-label section-label--light" data-i18n="stats.label">By the numbers</span>
+      <h2 class="section-heading section-heading--light" data-i18n="stats.heading">The cost of staying fragmented</h2>
+    </div>
+
+    <div class="stats__grid">
+
+      <div class="stats__item anim" data-delay="1">
+        <div class="stats__value" data-i18n="st.s1.value">81%</div>
+        <p class="stats__desc" data-i18n="st.s1.desc">of operators plan to increase AI investment in the next fiscal year</p>
+        <cite class="stats__source" data-i18n="st.s1.src">Deloitte State of AI in Restaurants, Q4 2024</cite>
+      </div>
+
+      <div class="stats__item anim" data-delay="2">
+        <div class="stats__value" data-i18n="st.s2.value">56%</div>
+        <p class="stats__desc" data-i18n="st.s2.desc">of restaurants saw revenue growth after adopting AI tools</p>
+        <cite class="stats__source" data-i18n="st.s2.src">Toast AI in Restaurants Survey, 2025</cite>
+      </div>
+
+      <div class="stats__item anim" data-delay="3">
+        <div class="stats__value" data-i18n="st.s3.value">$162B</div>
+        <p class="stats__desc" data-i18n="st.s3.desc">lost to food waste annually in US restaurants</p>
+        <cite class="stats__source" data-i18n="st.s3.src">EPA / RestaurantHQ, 2025</cite>
+      </div>
+
+      <div class="stats__item anim" data-delay="4">
+        <div class="stats__value" data-i18n="st.s4.value">94%</div>
+        <p class="stats__desc" data-i18n="st.s4.desc">of restaurant managers say AI is key to remaining competitive</p>
+        <cite class="stats__source" data-i18n="st.s4.src">Deloitte, 2024</cite>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════
+     CTA
+═══════════════════════════════════════════════════ -->
+<section class="cta-section" id="cta">
+  <div class="container">
+    <div class="cta-section__inner anim">
+      <h2 class="cta-section__heading" data-i18n="cta.heading">Ready to run your restaurants on AI?</h2>
+      <p class="cta-section__sub" data-i18n="cta.sub">Join operators who are turning fragmented operations into measurable profit with Twig.</p>
+      <div class="cta-section__actions">
+        <a href="#" class="btn btn--primary btn--lg" data-i18n="cta.primary">Request a demo</a>
+        <a href="#how" class="btn btn--secondary btn--lg" data-i18n="cta.secondary">Learn more</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ═══════════════════════════════════════════════════
+     FOOTER
+═══════════════════════════════════════════════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+
+      <div class="footer__brand">
+        <div class="footer__logo-mark" aria-hidden="true">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M2 14C2 14 5 9 8 7C11 5 14 2 14 2" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            <path d="M8 7C8 7 10 4.5 12 4.5" stroke="white" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div>
+          <div class="footer__brand-name">Twig <span>AI</span></div>
+          <div class="footer__tagline" data-i18n="footer.tagline">AI Operating System for Restaurants</div>
+        </div>
+      </div>
+
+      <ul class="footer__links">
+        <li><a href="#" data-i18n="footer.product">Product</a></li>
+        <li><a href="#" data-i18n="footer.pricing">Pricing</a></li>
+        <li><a href="#" data-i18n="footer.docs">Docs</a></li>
+        <li><a href="#" data-i18n="footer.privacy">Privacy</a></li>
+        <li><a href="#" data-i18n="footer.terms">Terms</a></li>
+      </ul>
+
+    </div>
+    <p class="footer__copy" data-i18n="footer.copy">© 2026 Twig AI. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

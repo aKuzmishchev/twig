@@ -1,0 +1,14 @@
+{
+  "name": "twig-landing",
+  "version": "1.0.0",
+  "description": "TWIG AI landing page with design system",
+  "type": "module",
+  "scripts": {
+    "build:tokens": "node style-dictionary.config.js",
+    "watch:tokens": "nodemon --watch tokens/ --exec 'node style-dictionary.config.js'"
+  },
+  "devDependencies": {
+    "style-dictionary": "^4.3.0",
+    "nodemon": "^3.1.0"
+  }
+}

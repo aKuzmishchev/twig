@@ -1,0 +1,33 @@
+name: Build Design Tokens
+
+on:
+  push:
+    paths:
+      - 'tokens/**'
+  workflow_dispatch:
+
+jobs:
+  build-tokens:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build tokens
+        run: npm run build:tokens
+
+      - name: Commit generated CSS
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: 'chore: rebuild design tokens [skip ci]'
+          file_pattern: 'src/tokens/*.css src/tokens/*.js'
