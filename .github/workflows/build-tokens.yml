@@ -20,7 +20,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: '22'
           cache: 'npm'
@@ -32,7 +32,7 @@ jobs:
         run: npm run build:tokens
 
       - name: Commit generated CSS
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: 'chore: rebuild design tokens [skip ci]'
           file_pattern: 'src/tokens/*.css src/tokens/*.js'
