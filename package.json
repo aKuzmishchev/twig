@@ -5,10 +5,19 @@
   "type": "module",
   "scripts": {
     "build:tokens": "node style-dictionary.config.js",
-    "watch:tokens": "nodemon --watch tokens/ --exec 'node style-dictionary.config.js'"
+    "watch:tokens": "nodemon --watch tokens/ --exec 'node style-dictionary.config.js'",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "devDependencies": {
-    "style-dictionary": "^4.3.0",
-    "nodemon": "^3.1.0"
+    "@storybook/addon-essentials": "^8.6.18",
+    "@storybook/addon-interactions": "^8.6.18",
+    "@storybook/blocks": "^8.6.18",
+    "@storybook/html": "^8.6.18",
+    "@storybook/html-vite": "^8.6.18",
+    "@storybook/test": "^8.6.18",
+    "nodemon": "^3.1.0",
+    "storybook": "^8.6.18",
+    "style-dictionary": "^4.3.0"
   }
 }
